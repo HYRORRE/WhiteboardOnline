@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 
 class ApiManager{
-	let url = ""
+	let url = "http://192.168.103.78/"
 	
 	var uid = ""
 	var client = ""
@@ -39,7 +39,7 @@ class ApiManager{
 			"password" : password,
 		]
 		
-		let req = Alamofire.request(url, method: .post, parameters: params)
+		let req = Alamofire.request(url + "sign_in", method: .post, parameters: params)
 		var isSuccess = false
 		req.responseJSON{ response in
 			isSuccess = response.result.isSuccess
