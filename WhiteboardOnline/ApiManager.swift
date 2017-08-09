@@ -9,14 +9,14 @@
 import Alamofire
 import SwiftyJSON
 
+let url = "http://192.168.103.78/"
+
+var uid = ""
+var client = ""
+var accessToken = ""
+
 class ApiManager{
-	let url = "http://192.168.103.78/"
-	
-	var uid = ""
-	var client = ""
-	var accessToken = ""
-	
-	func register(email: String, password: String, passwordConfirmation: String)-> Bool{
+	static func register(email: String, password: String, passwordConfirmation: String)-> Bool{
 		let params: Parameters = [
 			"email" : email,
 			"password" : password,
@@ -28,12 +28,12 @@ class ApiManager{
 		req.responseJSON{ response in
 			isSuccess = response.result.isSuccess
 			let json = JSON(response.result.value)
-			self.uid = json["uid"].string!
+			uid = json["uid"].string!
 		}
 		return isSuccess
 	}
 	
-	func login(email: String, password: String)-> Bool{
+	static func login(email: String, password: String)-> Bool{
 		let params: Parameters = [
 			"email" : email,
 			"password" : password,
@@ -44,17 +44,17 @@ class ApiManager{
 		req.responseJSON{ response in
 			isSuccess = response.result.isSuccess
 			let header = response.response?.allHeaderFields
-			self.client = header?["client"] as! String
-			self.client = header?["access_token"] as! String
+			client = header?["client"] as! String
+			client = header?["access_token"] as! String
 			let json = JSON(response.result.value)
-			self.uid = json["uid"].string!
+			uid = json["uid"].string!
 		}
 		return isSuccess
 	}
 	
-	func getGroups(groups: inout [Group]){
+	static func getGroups(groups: inout [Group]){
 		//groups.removeAll(keepingCapacity: true)
-		let req = Alamofire.request(url, method: .get, parameters: Parameters(), encoding: JSONEncoding.default, headers: getHTTPHeaders())
+		//let req = Alamofire.request(url, method: .get, parameters: Parameters(), encoding: JSONEncoding.default, headers: getHTTPHeaders())
 		
 	}
 	
