@@ -14,6 +14,7 @@
 		FFEDF0CF1F3AB20600AE1493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEDF0CD1F3AB20600AE1493 /* LaunchScreen.storyboard */; };
 		FFEDF0DA1F3AB20600AE1493 /* WhiteboardOnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0D91F3AB20600AE1493 /* WhiteboardOnlineTests.swift */; };
 		FFEDF0E51F3AB20700AE1493 /* WhiteboardOnlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0E41F3AB20700AE1493 /* WhiteboardOnlineUITests.swift */; };
+		FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FFEDF0E01F3AB20700AE1493 /* WhiteboardOnlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteboardOnlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEDF0E41F3AB20700AE1493 /* WhiteboardOnlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteboardOnlineUITests.swift; sourceTree = "<group>"; };
 		FFEDF0E61F3AB20700AE1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				FFEDF0C41F3AB20600AE1493 /* AppDelegate.swift */,
 				FFEDF0C61F3AB20600AE1493 /* ViewController.swift */,
 				FFEDF0C81F3AB20600AE1493 /* Main.storyboard */,
+				FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */,
 				FFEDF0CB1F3AB20600AE1493 /* Assets.xcassets */,
 				FFEDF0CD1F3AB20600AE1493 /* LaunchScreen.storyboard */,
 				FFEDF0D01F3AB20600AE1493 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEDF0C71F3AB20600AE1493 /* ViewController.swift in Sources */,
+				FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */,
 				FFEDF0C51F3AB20600AE1493 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +511,7 @@
 				FFEDF0EB1F3AB20700AE1493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFEDF0EC1F3AB20700AE1493 /* Build configuration list for PBXNativeTarget "WhiteboardOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				FFEDF0EE1F3AB20700AE1493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFEDF0EF1F3AB20700AE1493 /* Build configuration list for PBXNativeTarget "WhiteboardOnlineUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				FFEDF0F11F3AB20700AE1493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
