@@ -1,3 +1,6 @@
+Pods/
+Podfile.lock
+
 Cartfile*
 Carthage/
 
