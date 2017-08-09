@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75A24C051F3AE26900B71A36 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A24C031F3AE26900B71A36 /* Alamofire.framework */; };
-		75A24C061F3AE26900B71A36 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A24C041F3AE26900B71A36 /* SwiftyJSON.framework */; };
 		75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C081F3AE2AC00B71A36 /* ApiManager.swift */; };
 		75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C0A1F3AEA3500B71A36 /* Group.swift */; };
 		75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C0C1F3AEBC800B71A36 /* Card.swift */; };
@@ -66,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A24C051F3AE26900B71A36 /* Alamofire.framework in Frameworks */,
-				75A24C061F3AE26900B71A36 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +159,6 @@
 				FFEDF0BD1F3AB20600AE1493 /* Sources */,
 				FFEDF0BE1F3AB20600AE1493 /* Frameworks */,
 				FFEDF0BF1F3AB20600AE1493 /* Resources */,
-				75A24C071F3AE26F00B71A36 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,24 +278,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		75A24C071F3AE26F00B71A36 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFEDF0BD1F3AB20600AE1493 /* Sources */ = {
