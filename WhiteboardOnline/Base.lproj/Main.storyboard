@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="Mhw-KF-aPj" kind="show" id="C18-EG-y6h"/>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trq-Ys-0e8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soa-2p-5cE">
@@ -77,6 +77,10 @@
                             <constraint firstItem="WQE-at-fSW" firstAttribute="top" secondItem="Soa-2p-5cE" secondAttribute="bottom" constant="19" id="ulb-ND-A82"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="WQE-at-fSW" id="A7i-JM-HYn"/>
+                        <outlet property="password" destination="LG1-Ew-dm8" id="zRc-4B-ak3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,9 +264,6 @@
                                 <rect key="frame" x="153" y="537" width="69" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Entry"/>
-                                <connections>
-                                    <segue destination="Mhw-KF-aPj" kind="show" id="NMC-C9-PDN"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msU-ci-cdJ">
                                 <rect key="frame" x="151" y="108" width="72" height="36"/>
@@ -325,7 +326,4 @@
             <point key="canvasLocation" x="0.80000000000000004" y="-617.54122938530736"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="C18-EG-y6h"/>
-    </inferredMetricsTieBreakers>
 </document>
