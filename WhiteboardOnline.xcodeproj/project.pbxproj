@@ -21,6 +21,7 @@
 		FFEDF0DA1F3AB20600AE1493 /* WhiteboardOnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0D91F3AB20600AE1493 /* WhiteboardOnlineTests.swift */; };
 		FFEDF0E51F3AB20700AE1493 /* WhiteboardOnlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0E41F3AB20700AE1493 /* WhiteboardOnlineUITests.swift */; };
 		FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */; };
+		FFEDF0F51F3B13A800AE1493 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0F41F3B13A800AE1493 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FFEDF0E41F3AB20700AE1493 /* WhiteboardOnlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteboardOnlineUITests.swift; sourceTree = "<group>"; };
 		FFEDF0E61F3AB20700AE1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FFEDF0F41F3B13A800AE1493 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				75A24C081F3AE2AC00B71A36 /* ApiManager.swift */,
 				75A24C0A1F3AEA3500B71A36 /* Group.swift */,
 				75A24C0C1F3AEBC800B71A36 /* Card.swift */,
+				FFEDF0F41F3B13A800AE1493 /* NavigationController.swift */,
 			);
 			path = WhiteboardOnline;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */,
 				75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */,
 				FFEDF0C51F3AB20600AE1493 /* AppDelegate.swift in Sources */,
+				FFEDF0F51F3B13A800AE1493 /* NavigationController.swift in Sources */,
 				75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
