@@ -52,6 +52,16 @@ class ApiManager{
 		return isSuccess
 	}
 	
+	func getGroups(groups: inout [Group]){
+		//groups.removeAll(keepingCapacity: true)
+		let req = Alamofire.request(url, method: .get, parameters: Parameters(), encoding: JSONEncoding.default, headers: getHTTPHeaders())
+		
+	}
+	
+	func getCards(cards: inout [Card]){
+		
+	}
+	
 	internal func getHTTPHeaders() -> HTTPHeaders {
 		let headers: HTTPHeaders = [
 			"uid" : uid,
