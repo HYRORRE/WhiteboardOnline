@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A24C051F3AE26900B71A36 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A24C031F3AE26900B71A36 /* Alamofire.framework */; };
+		75A24C061F3AE26900B71A36 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A24C041F3AE26900B71A36 /* SwiftyJSON.framework */; };
+		75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C081F3AE2AC00B71A36 /* ApiManager.swift */; };
+		75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C0A1F3AEA3500B71A36 /* Group.swift */; };
+		75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C0C1F3AEBC800B71A36 /* Card.swift */; };
 		FFEDF0C51F3AB20600AE1493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0C41F3AB20600AE1493 /* AppDelegate.swift */; };
 		FFEDF0C71F3AB20600AE1493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0C61F3AB20600AE1493 /* ViewController.swift */; };
 		FFEDF0CA1F3AB20600AE1493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEDF0C81F3AB20600AE1493 /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75A24C031F3AE26900B71A36 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		75A24C041F3AE26900B71A36 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		75A24C081F3AE2AC00B71A36 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		75A24C0A1F3AEA3500B71A36 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		75A24C0C1F3AEBC800B71A36 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		FFEDF0C11F3AB20600AE1493 /* WhiteboardOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteboardOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEDF0C41F3AB20600AE1493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFEDF0C61F3AB20600AE1493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A24C051F3AE26900B71A36 /* Alamofire.framework in Frameworks */,
+				75A24C061F3AE26900B71A36 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A24C021F3AE26900B71A36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75A24C031F3AE26900B71A36 /* Alamofire.framework */,
+				75A24C041F3AE26900B71A36 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFEDF0B81F3AB20600AE1493 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +104,7 @@
 				FFEDF0D81F3AB20600AE1493 /* WhiteboardOnlineTests */,
 				FFEDF0E31F3AB20700AE1493 /* WhiteboardOnlineUITests */,
 				FFEDF0C21F3AB20600AE1493 /* Products */,
+				75A24C021F3AE26900B71A36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +128,9 @@
 				FFEDF0CB1F3AB20600AE1493 /* Assets.xcassets */,
 				FFEDF0CD1F3AB20600AE1493 /* LaunchScreen.storyboard */,
 				FFEDF0D01F3AB20600AE1493 /* Info.plist */,
+				75A24C081F3AE2AC00B71A36 /* ApiManager.swift */,
+				75A24C0A1F3AEA3500B71A36 /* Group.swift */,
+				75A24C0C1F3AEBC800B71A36 /* Card.swift */,
 			);
 			path = WhiteboardOnline;
 			sourceTree = "<group>";
@@ -138,6 +163,7 @@
 				FFEDF0BD1F3AB20600AE1493 /* Sources */,
 				FFEDF0BE1F3AB20600AE1493 /* Frameworks */,
 				FFEDF0BF1F3AB20600AE1493 /* Resources */,
+				75A24C071F3AE26F00B71A36 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -196,6 +222,7 @@
 				TargetAttributes = {
 					FFEDF0C01F3AB20600AE1493 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7EDZCJCXL4;
 						ProvisioningStyle = Automatic;
 					};
 					FFEDF0D41F3AB20600AE1493 = {
@@ -257,6 +284,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75A24C071F3AE26F00B71A36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FFEDF0BD1F3AB20600AE1493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +309,10 @@
 			files = (
 				FFEDF0C71F3AB20600AE1493 /* ViewController.swift in Sources */,
 				FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */,
+				75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */,
+				75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */,
 				FFEDF0C51F3AB20600AE1493 /* AppDelegate.swift in Sources */,
+				75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +464,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7EDZCJCXL4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WhiteboardOnline/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -429,6 +482,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7EDZCJCXL4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WhiteboardOnline/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
