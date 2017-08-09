@@ -52,7 +52,7 @@ class ApiManager{
 		return isSuccess
 	}
 	
-	func getHTTPHeaders() -> HTTPHeaders {
+	internal func getHTTPHeaders() -> HTTPHeaders {
 		let headers: HTTPHeaders = [
 			"uid" : uid,
 			"client" : client,
