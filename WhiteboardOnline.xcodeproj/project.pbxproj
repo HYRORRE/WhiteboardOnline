@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		751117591F3BF5D400D3BB10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A24C031F3AE26900B71A36 /* Alamofire.framework */; };
 		7511175A1F3BF5D400D3BB10 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A24C041F3AE26900B71A36 /* SwiftyJSON.framework */; };
+		7511175C1F3C003800D3BB10 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511175B1F3C003800D3BB10 /* CreateCardViewController.swift */; };
+		7511175E1F3C00CA00D3BB10 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511175D1F3C00CA00D3BB10 /* RegisterViewController.swift */; };
 		75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C081F3AE2AC00B71A36 /* ApiManager.swift */; };
 		75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C0A1F3AEA3500B71A36 /* Group.swift */; };
 		75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A24C0C1F3AEBC800B71A36 /* Card.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7511175B1F3C003800D3BB10 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
+		7511175D1F3C00CA00D3BB10 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		75A24C031F3AE26900B71A36 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		75A24C041F3AE26900B71A36 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		75A24C081F3AE2AC00B71A36 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		FFEDF0C31F3AB20600AE1493 /* WhiteboardOnline */ = {
 			isa = PBXGroup;
 			children = (
+				7511175B1F3C003800D3BB10 /* CreateCardViewController.swift */,
 				FFEDF0C41F3AB20600AE1493 /* AppDelegate.swift */,
 				FFEDF0C61F3AB20600AE1493 /* ViewController.swift */,
 				FFEDF0C81F3AB20600AE1493 /* Main.storyboard */,
@@ -137,6 +142,7 @@
 				75A24C0A1F3AEA3500B71A36 /* Group.swift */,
 				75A24C0C1F3AEBC800B71A36 /* Card.swift */,
 				FFEDF0F41F3B13A800AE1493 /* NavigationController.swift */,
+				7511175D1F3C00CA00D3BB10 /* RegisterViewController.swift */,
 			);
 			path = WhiteboardOnline;
 			sourceTree = "<group>";
@@ -314,11 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEDF0C71F3AB20600AE1493 /* ViewController.swift in Sources */,
+				7511175E1F3C00CA00D3BB10 /* RegisterViewController.swift in Sources */,
 				FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */,
 				75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */,
 				75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */,
 				FFEDF0F71F3B1EFB00AE1493 /* LoginViewController.swift in Sources */,
 				FFEDF0C51F3AB20600AE1493 /* AppDelegate.swift in Sources */,
+				7511175C1F3C003800D3BB10 /* CreateCardViewController.swift in Sources */,
 				FFEDF0F51F3B13A800AE1493 /* NavigationController.swift in Sources */,
 				75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */,
 			);

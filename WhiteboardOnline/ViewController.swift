@@ -11,7 +11,7 @@ import UIKit
 class CardViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     private var newButton: UIBarButtonItem!
     
-    let cardList: [Card] = [Card()]
+    var cardList: [Card] = [Card()]
     
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
     
@@ -25,7 +25,8 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Do any additional setup after loading the view, typically from a nib.
 		
         cardList[0].commentFront = "Hello World!"
-        
+		
+		ApiManager.getCards(groupId: ApiManager.getNowGroupId(), cards: &cardList)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{

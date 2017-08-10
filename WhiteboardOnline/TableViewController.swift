@@ -11,9 +11,8 @@ import UIKit
 class TableViewController: UITableViewController {
     
     private var newButton: UIBarButtonItem!
-    
-    
-    let groupList: [Group] = [Group()]
+	
+    var groupList: [Group] = [Group()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,9 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+		
+		ApiManager.getGroups(groups: &groupList)
+		
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +53,11 @@ class TableViewController: UITableViewController {
 
         return cell
     }
-    
+	
+	override func tableView(_ table: UITableView, didSelectRowAt indexPath: IndexPath) {
+		ApiManager.setNowGroupId(id: groupList[indexPath.row].id)
+	}
+	
     override func viewWillAppear(_ animated: Bool) {
         newButton = UIBarButtonItem(title: "Create", style: .plain, target: self, action: #selector(TableViewController.onClickMyButton(sender:)))
         
