@@ -21,6 +21,7 @@
 		FFEDF0E51F3AB20700AE1493 /* WhiteboardOnlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0E41F3AB20700AE1493 /* WhiteboardOnlineUITests.swift */; };
 		FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */; };
 		FFEDF0F51F3B13A800AE1493 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0F41F3B13A800AE1493 /* NavigationController.swift */; };
+		FFEDF0F71F3B1EFB00AE1493 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDF0F61F3B1EFB00AE1493 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FFEDF0E61F3AB20700AE1493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FFEDF0F41F3B13A800AE1493 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FFEDF0F61F3B1EFB00AE1493 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				FFEDF0C41F3AB20600AE1493 /* AppDelegate.swift */,
 				FFEDF0C61F3AB20600AE1493 /* ViewController.swift */,
 				FFEDF0C81F3AB20600AE1493 /* Main.storyboard */,
+				FFEDF0F61F3B1EFB00AE1493 /* LoginViewController.swift */,
 				FFEDF0F21F3AE8BE00AE1493 /* TableViewController.swift */,
 				FFEDF0CB1F3AB20600AE1493 /* Assets.xcassets */,
 				FFEDF0CD1F3AB20600AE1493 /* LaunchScreen.storyboard */,
@@ -314,6 +317,7 @@
 				FFEDF0F31F3AE8BE00AE1493 /* TableViewController.swift in Sources */,
 				75A24C091F3AE2AC00B71A36 /* ApiManager.swift in Sources */,
 				75A24C0D1F3AEBC800B71A36 /* Card.swift in Sources */,
+				FFEDF0F71F3B1EFB00AE1493 /* LoginViewController.swift in Sources */,
 				FFEDF0C51F3AB20600AE1493 /* AppDelegate.swift in Sources */,
 				FFEDF0F51F3B13A800AE1493 /* NavigationController.swift in Sources */,
 				75A24C0B1F3AEA3500B71A36 /* Group.swift in Sources */,

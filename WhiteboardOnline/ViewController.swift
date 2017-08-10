@@ -25,6 +25,12 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Do any additional setup after loading the view, typically from a nib.
 		
         cardList[0].commentFront = "Hello World!"
+        
+        // 枠のカラー
+        textView.layer.borderColor = UIColor.red.cgColor
+        
+        // 枠の幅
+        textView.layer.borderWidth = 1.0
 		
     }
     

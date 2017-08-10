@@ -1,5 +1,5 @@
 //
-//  NavigationController.swift
+//  LoginViewController.swift
 //  WhiteboardOnline
 //
 //  Created by Moto Shinriki on 2017/08/09.
@@ -8,8 +8,11 @@
 
 import UIKit
 
+class LoginViewController: UIViewController {
 
-class NavigationController: UINavigationController {
+    @IBOutlet weak var email: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,10 @@ class NavigationController: UINavigationController {
     }
     
 
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
