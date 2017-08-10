@@ -66,12 +66,13 @@ class TableViewController: UITableViewController {
     }
     
     internal func onClickMyButton(sender: UIButton){
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "CreateGroup") as! CreateGroupViewController
         
         switch(sender.tag){
             
         case 1:
-            // 背景色を青色に変える.
-            self.view.backgroundColor = UIColor.blue
+            self.present(nextView, animated: true, completion: nil)
             
         case 2:
             // 背景色を赤色に変える.
