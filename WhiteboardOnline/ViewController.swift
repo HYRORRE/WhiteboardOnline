@@ -26,12 +26,6 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
 		
         cardList[0].commentFront = "Hello World!"
         
-        // 枠のカラー
-        textView.layer.borderColor = UIColor.red.cgColor
-        
-        // 枠の幅
-        textView.layer.borderWidth = 1.0
-		
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
