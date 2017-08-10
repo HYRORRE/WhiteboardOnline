@@ -128,11 +128,6 @@ class ApiManager{
 	}
 	
 	static func getCards(groupId: Int, cards: inout [Card]) -> Bool{
-		var card = Card()
-		card.commentFront = "testcard"
-		card.commentBack = "back"
-		createCard(groupId: groupId, card: card)
-		
 		lock = true
 		let req = Alamofire.request(
 			url + "/cards",
@@ -156,7 +151,6 @@ class ApiManager{
 			}
 			lock = false
 		}
-		
 		
 		let runLoop = RunLoop.current
 		while lock && runLoop.run(mode: .defaultRunLoopMode, before: Date(timeIntervalSinceNow: 0.1)) {}

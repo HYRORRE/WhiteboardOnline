@@ -33,12 +33,10 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         // Cell はストーリーボードで設定したセルのID
         let testCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        
-        
+		
         // Tag番号を使ってLabelのインスタンス生成
         let label = testCell.contentView.viewWithTag(2) as! UILabel
         label.text = cardList[indexPath.row].commentFront
-        
         
         return testCell
     }
@@ -83,10 +81,6 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
             print("error")
         }
     }
-
-    
-    
-
 
 }
 
