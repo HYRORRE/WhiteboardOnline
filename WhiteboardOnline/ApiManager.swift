@@ -9,7 +9,7 @@
 import Alamofire
 import SwiftyJSON
 
-let url = "http://192.168.103.78/"
+let url = "http://54.65.183.238:3000/api/v1"
 
 var uid = ""
 var client = ""
@@ -23,7 +23,7 @@ class ApiManager{
 			"password_confirmation" : passwordConfirmation
 		]
 		
-		let req = Alamofire.request(url, method: .post, parameters: params)
+		let req = Alamofire.request(url + "/auth", method: .post, parameters: params)
 		var isSuccess = false
 		req.responseJSON{ response in
 			isSuccess = response.result.isSuccess
@@ -39,7 +39,7 @@ class ApiManager{
 			"password" : password,
 		]
 		
-		let req = Alamofire.request(url + "sign_in", method: .post, parameters: params)
+		let req = Alamofire.request(url + "/auth/sign_in", method: .post, parameters: params)
 		var isSuccess = false
 		req.responseJSON{ response in
 			isSuccess = response.result.isSuccess
@@ -53,8 +53,13 @@ class ApiManager{
 	}
 	
 	static func getGroups(groups: inout [Group]){
-		//groups.removeAll(keepingCapacity: true)
-		//let req = Alamofire.request(url, method: .get, parameters: Parameters(), encoding: JSONEncoding.default, headers: getHTTPHeaders())
+		groups.removeAll(keepingCapacity: true)
+		//let req = Alamofire.request(url, headers: getHTTPHeaders())
+		//Alamofire.request(url, method: .get, parameters: Parameters(), headers: getHTTPHeaders())
+		
+	}
+	
+	static func createGroup(name: String, comment: String?){
 		
 	}
 	
