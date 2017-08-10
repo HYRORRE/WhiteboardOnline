@@ -11,6 +11,7 @@ import UIKit
 class CreateGroupViewController: UIViewController {
     
     @IBAction func unwindToTop(segue: UIStoryboardSegue){
+        
     }
     
     let w = UIScreen.main.bounds.size.width
@@ -33,7 +34,7 @@ class CreateGroupViewController: UIViewController {
             textField.layer.borderWidth = 1.0
             self.textFields.append(textField)
             scrollView.addSubview(textField)
-            scrollView.contentSize.height = h
+            scrollView.contentSize.height = h + ((314 + 35.0 * CGFloat(count)) - h)
             scrollView.contentSize.width = w
         } else if (count < self.textFields.count) {
             guard let textField = self.textFields.last else {
@@ -50,6 +51,7 @@ class CreateGroupViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        scrollView.delaysContentTouches = false;
     }
 
     override func didReceiveMemoryWarning() {
