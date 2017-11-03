@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,7 +28,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhR-H5-w8w">
                                 <rect key="frame" x="131" y="486" width="110" height="44"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-31.199999999999999" y="97.601199400299862"/>
         </scene>
-        <!--Card View Controller-->
+        <!--カード一覧-->
         <scene sceneID="KeI-GI-PxY">
             <objects>
-                <viewController id="nWj-cl-chw" customClass="CardViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="カード一覧" id="nWj-cl-chw" customClass="CardViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aCL-jT-TX1"/>
                         <viewControllerLayoutGuide type="bottom" id="zJU-zh-Lcp"/>
@@ -102,7 +102,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TU8-rh-dGi">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LXC-7m-5De">
                                     <size key="itemSize" width="174" height="134"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -125,7 +125,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.065966488466576489" green="0.16598874350722848" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.72614019745760972" green="0.88412120340776601" blue="0.89681832901554404" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="F4z-OP-pJf" firstAttribute="leading" secondItem="2fB-50-hQM" secondAttribute="leadingMargin" id="1Gg-7j-pCv"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="F4z-OP-pJf" secondAttribute="trailing" id="9kU-2v-Cu9"/>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="2769" y="98"/>
         </scene>
-        <!--Table View Controller-->
+        <!--グループ一覧-->
         <scene sceneID="vOr-If-Ouu">
             <objects>
-                <tableViewController storyboardIdentifier="groupTableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mhw-KF-aPj" customClass="TableViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="groupTableView" title="グループ一覧" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mhw-KF-aPj" customClass="TableViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uWz-IN-RnF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +160,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Wv-nH-AVB" id="ndh-Si-sSf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -238,12 +238,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0w9-FO-T1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2110" y="313"/>
+            <point key="canvasLocation" x="-2270" y="-448"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Register-->
         <scene sceneID="ox7-vx-8ec">
             <objects>
-                <viewController id="KDI-d7-Tet" customClass="RegisterViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="KDI-d7-Tet" customClass="RegisterViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JhC-JA-utk"/>
                         <viewControllerLayoutGuide type="bottom" id="cjU-NC-RQQ"/>
@@ -259,7 +259,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDh-kJ-IgT">
                                 <rect key="frame" x="133" y="537" width="109" height="48"/>
@@ -303,7 +303,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="0.80000000000000004" y="-617.54122938530736"/>
         </scene>
-        <!--Create Card View Controller-->
+        <!--カード新規作成-->
         <scene sceneID="xrT-Up-DPS">
             <objects>
-                <viewController storyboardIdentifier="CreateCard" id="868-3i-B25" customClass="CreateCardViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateCard" title="カード新規作成" id="868-3i-B25" customClass="CreateCardViewController" customModule="WhiteboardOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Zj-1s-ulV"/>
                         <viewControllerLayoutGuide type="bottom" id="FAF-Hu-tqO"/>
@@ -363,6 +363,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
+                                    <action selector="createDidTap:" destination="868-3i-B25" eventType="touchUpInside" id="sGq-2q-rvB"/>
                                     <segue destination="RHD-fi-CQH" kind="unwind" unwindAction="goBack:" id="hyZ-0s-MkG"/>
                                 </connections>
                             </button>
@@ -430,7 +431,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wD0-Iv-lp5" customClass="CreateGroup">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wD0-Iv-lp5">
                                 <rect key="frame" x="5" y="28" width="364" height="631"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Group Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-g0-1rp">
@@ -466,6 +467,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
+                                            <action selector="createDidTap:" destination="uBG-5H-9zr" eventType="touchUpInside" id="Ecy-8c-sHf"/>
                                             <segue destination="JGC-2G-Prv" kind="unwind" unwindAction="goBack:" id="T6W-b8-sJW"/>
                                         </connections>
                                     </button>
@@ -491,6 +493,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="groupName" destination="Vtt-eC-P48" id="Fps-WJ-uQG"/>
                         <outlet property="scrollView" destination="wD0-Iv-lp5" id="9j6-mU-tBh"/>
                         <outlet property="stepper" destination="gu7-is-kPX" id="K92-Hs-BnA"/>
                     </connections>
@@ -501,7 +504,4 @@
             <point key="canvasLocation" x="2068" y="-712.89355322338838"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4K1-Vi-LXw"/>
-    </inferredMetricsTieBreakers>
 </document>

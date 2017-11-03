@@ -13,7 +13,13 @@ class CreateGroupViewController: UIViewController {
     @IBAction func unwindToTop(segue: UIStoryboardSegue){
         
     }
-    
+	
+	@IBAction func createDidTap(_ sender: Any) {
+		ApiManager.createGroup(name: groupName.text!)
+	}
+	
+	@IBOutlet weak var groupName: UITextField!
+	
     let w = UIScreen.main.bounds.size.width
     let h = UIScreen.main.bounds.size.height
     

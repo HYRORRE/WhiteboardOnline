@@ -49,13 +49,13 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTableView", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = groupList[indexPath.row].name
+        cell.textLabel?.text = groupList[indexPath.section].name
 
         return cell
     }
 	
 	override func tableView(_ table: UITableView, didSelectRowAt indexPath: IndexPath) {
-		ApiManager.setNowGroupId(id: groupList[indexPath.row].id)
+		ApiManager.setNowGroupId(id: groupList[indexPath.section].id)
 	}
 	
     override func viewWillAppear(_ animated: Bool) {

@@ -11,7 +11,7 @@ import UIKit
 class CreateCardViewController: UIViewController {
     
     @IBAction func unwindToTop(segue: UIStoryboardSegue){
-        
+		
     }
 
     @IBOutlet weak var TextView: UITextView!
@@ -38,6 +38,12 @@ class CreateCardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+	@IBAction func createDidTap(_ sender: Any) {
+		var card = Card()
+		card.commentFront = TextView.text
+		card.commentBack = TextView.text
+		ApiManager.createCard(groupId: ApiManager.getNowGroupId(), card: card)
+	}
 
     /*
     // MARK: - Navigation

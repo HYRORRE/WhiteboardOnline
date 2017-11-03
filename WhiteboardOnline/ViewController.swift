@@ -27,6 +27,7 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
         cardList[0].commentFront = "Hello World!"
 		
 		ApiManager.getCards(groupId: ApiManager.getNowGroupId(), cards: &cardList)
+		
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
@@ -37,7 +38,7 @@ class CardViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Tag番号を使ってLabelのインスタンス生成
         let label = testCell.contentView.viewWithTag(2) as! UILabel
         label.text = cardList[indexPath.row].commentFront
-        
+		
         return testCell
     }
     
